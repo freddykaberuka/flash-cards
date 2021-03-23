@@ -12,7 +12,7 @@ body {
   min-height: 100%;
   background: #fff;
   color: rgba(255, 255, 255, 0.4);
-  background: #222;
+  background: rgb(231, 229, 229);
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300; 
@@ -29,7 +29,7 @@ body {
   padding-top:16px;
   padding-left:16px;
   height:10vh;
-  color:white;
+  color:rgb(14, 13, 13);
   text-align:center;
 }
 
@@ -44,6 +44,8 @@ body {
   margin-left: 2%;
   min-height: 50vh;
   float:right;
+  color:rgb(0, 0, 0);
+  background-color:rgb(161, 156, 156);
 }
 /*button*/
 .button {
@@ -57,7 +59,13 @@ body {
   border: none;
   
 }
-.next,.prev {
+.buttons{
+  display:flex;
+  width:20%;
+  float:center;
+}
+.next{
+  height:30px;
   background: #026aa7;
   color: white;
   border-radius: 4px;
@@ -68,7 +76,20 @@ body {
   border: none;
   
 }
-.reset {
+.prev {
+  height:30px;
+  background: #026aa7;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 2px;
+  width:50%;
+  text-align:center;
+  cursor: pointer;
+  border: none;
+  
+}
+.reset{
+  height:30px;
   background:rgb(231, 40, 40);
   color: white;
   border-radius: 4px;
@@ -96,6 +117,8 @@ body {
   min-height: 50vh;
   float:left;
   text-align:center;
+  color:rgb(22, 21, 21);
+  background-color:rgb(138, 134, 134);
 }
 /*combine sidebar with content*/
 

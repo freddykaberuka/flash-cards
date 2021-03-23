@@ -3,7 +3,7 @@ import Header from './components/header';
 import AsideBar from './components/aside';
 import Home from './components/home';
 import Footer from './components/footer';
-import buttons from './components/buttons'
+import Buttons from './components/buttons'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
    <div className="content">
  <Home/></div>
  </div>
- <buttons/>
+ <Buttons/>
  <Footer/>
     </div>
   );
