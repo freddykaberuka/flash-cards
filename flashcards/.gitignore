@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+../firebase.js
+src/Config/Firebase/db_config.js
+src/Data/cards.json
