@@ -5,6 +5,7 @@ import NextBtn from './components/button/button'
 import Header from './components/header'
 import Aside from './components/aside'
 import Footer from './components/footer'
+import AddCard from './components/Card/addCard'
 
 class App extends Component {
   constructor(props){
@@ -12,8 +13,8 @@ class App extends Component {
     this.updateCard = this.updateCard.bind(this);
     this.state={
       cards:[
-        {id: 1, question:"Capital city of Rwanda", answer:"Kigali"},
-        {id: 2, question:"President of Rwanda", answer:"Kagame"},
+        {id: 1, question:"What is a class?", answer:"A class is a blueprint for creating objects. A class contains methods and variables which are a class instance."},
+        {id: 2, question:"What is an array?", answer:"An array is a container that keeps a specific number of similar data types."},
       ],
       currentCard:{}
     }
@@ -40,14 +41,14 @@ class App extends Component {
       <div className="App">
 
         <Header />
-        <h1 className="" style={{color:"black", paddingLeft:"4px",marginLeft: "6%",width: "100%",paddingLeft:"16px"}}>List of Questions and Answers</h1>
         <div className="container">
           <Aside />
+          <AddCard />
         <div className="cardRow">
         <Card question={this.state.currentCard.question}
               answer={this.state.currentCard.answer}/>
               <br/>
-              <div className="" style={{float:"right"}}><NextBtn nextBtn={this.updateCard}/> </div> 
+              <div className="" style={{float:"center", paddingLeft:"80px"}}><NextBtn nextBtn={this.updateCard}/> </div> 
       </div>
       </div>
       <Footer />

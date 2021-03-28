@@ -40,6 +40,8 @@
     width: 400px;
     text-align: center;
     transform: rotateY(180deg);
+    background:black;
+    color:white;
   }
   
   .eng{
@@ -50,11 +52,42 @@
   
   
   .pin{
-      color: rgba(200, 10, 10, 1);
+      color:white;
       font-size: 2.3em;
       padding-top: 10%;
   }
+
+  .btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+  
   @media (max-width:375px){
+    .header{
+        width:100%;
+      }
     .card-container {
         cursor: pointer;
         height: 400px;
@@ -63,6 +96,6 @@
         position: relative;
         margin: auto;
         transition: ease-in;
-        
+        max-width:100%;
       }
   }

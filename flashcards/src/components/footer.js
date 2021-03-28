@@ -1,6 +1,6 @@
 const Footer = () => {
     return ( 
-        <div className="footer">&copy Freddy-2021</div>
+        <div className="footer">&copy; Freddy-2021</div>
      );
 }
  
