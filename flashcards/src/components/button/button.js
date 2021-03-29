@@ -21,11 +21,9 @@ class NextBtn extends Component{
                 <button className="btn-prev" onClick={this.nextBtn} >Prev</button>
             </div>
             <div className="buttonContainer">
-                <button className="btn-reset" onClick={this.nextBtn}>reset</button>&nbsp;&nbsp;&nbsp;
+                <button className="btn-reset" onClick={this.nextBtn}>Next</button>&nbsp;&nbsp;&nbsp;
             </div>
-            <div className="buttonContainer">
-                <button className="btn" onClick={this.nextBtn}>Next</button>
-            </div>
+            
             </div>
         )
     }

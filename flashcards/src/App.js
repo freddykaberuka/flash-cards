@@ -5,7 +5,6 @@ import NextBtn from './components/button/button'
 import Header from './components/header'
 import Aside from './components/aside'
 import Footer from './components/footer'
-import AddCard from './components/Card/addCard'
 
 class App extends Component {
   constructor(props){
@@ -43,7 +42,7 @@ class App extends Component {
         <Header />
         <div className="container">
           <Aside />
-          <AddCard />
+          
         <div className="cardRow">
         <Card question={this.state.currentCard.question}
               answer={this.state.currentCard.answer}/>

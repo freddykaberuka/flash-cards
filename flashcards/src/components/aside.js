@@ -1,16 +1,18 @@
 import '../App.css'
+import AdCard from './Card/adCard'
 const Aside = () => {
     return ( 
         <div className="aside-container">
         <div className="aside">
             <h3>Category</h3>
-            <p className="level">Data Analysis</p>
-            <p className="level">Artificial Intelligence</p>
-            <p className="level">Programming</p>
+            <ul >
+                <li className="level">Data Analysis</li>
+                <li className="levelo">Programming</li>
+                <li className="levelo">Penetration Testing</li>
+            </ul>
             </div>
             <br/>
-            <div className="btn-create"><p className="button" style={{position:"relative",bottom:"0", paddingLeft:"0"}}>create card</p></div>
-            
+            <div className="asideForm"><AdCard /></div>
         </div>
      );
 }
